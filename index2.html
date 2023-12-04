@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" class="login-pf">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Login miBA</title>
+    <link rel="icon" href="./favicon_ba.png">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./recursos/bootstrap.min.css">
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="stylesheet" href="./recursos/bootstrap-datepicker3.css">
+    <!-- Bastrap CSS -->
+    <link rel="stylesheet" href="./recursos/bastrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./recursos/estilos.css">
+    <!-- Mat Icons -->
+    <link rel="stylesheet" href="./recursos/mat-icon.css">
+    <script src="./recursos/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script id="dataslayerLaunchMonitors"></script>
+    <script src="./recursos/bowser.js"></script>
+    <script src="./recursos/browser.js" type="text/javascript"></script>
+    <script src="./recursos/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./recursos/jquery.inputmask.bundle.js" type="text/javascript"></script>
+    <script src="./recursos/utils.js" type="text/javascript"></script>
+    <script src="./recursos/usig.AutoCompleterFull.min.js" type="text/javascript"></script>
+    <script src="./recursos/usig.SuggesterCatastro.min.js" type="text/javascript"></script>
+    <script src="./recursos/usig.CustomGetDatosUtiles.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./recursos/usig.AutoCompleterDialog.bootstrap.css">
+    <script src="./recursos/moment.min.js" type="text/javascript"></script>
+    <script src="./recursos/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="./recursos/bootstrap-datepicker.es.min.js" type="text/javascript"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./recursos/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./recursos/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="./recursos/flag-css.css">
+    <script type="text/javascript" src="./recursos/bootstrap-show-password.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container bkg-color">
+      <!-- ENCABEZADO -->
+      <header id="header">
+        <div class="container imagen_header">
+          <img id="logoMiba" src="./recursos/mi.svg" class="img-fluid" alt="Logo miBA">
+          <img id="logoMiba" src="./recursos/ba.svg" class="img-fluid" alt="Logo miBA">
+          <div style="text-align: -webkit-right; flex: 1">
+            <button id="cambiarIdioma" class="btn btn_cambiarIdioma btn-default btn-default_text
+                        btn-default_text_min" type="button" data-toggle="modal" style="justify-content: center;">
+              <a href="" style="background-color: transparent" download="">
+                <img src="./recursos/mundo.svg" class="img-fluid" alt="Mundo">
+              </a>
+            </button>
+            <button id="soporte" class="btn btn_soporte btn-default btn-default_text btn-default_text_min" onclick="window.open('www.google.com.ar')">
+              <span>?</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div style="margin-bottom: 64px; overflow: hidden;">
+          <!-- LOGIN -->
+          <div class="col-xs-12 col-md-5 miba_login">
+            <div class="login-wrapper">
+              <div class="card-content" style="padding: 0!important;min-height: 39px!important;display: flex;align-items: center;">
+                <style>
+                  .cuadro-mensaje {
+                    width: 100%;
+                    padding: 10px;
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                    text-align: left;
+                    font-size: 12px;
+                    border-radius: 8px;
+                    color: #ffffff;
+                  }
+
+                  .mb-success {
+                    border: 1px solid #26874A;
+                    border-left: 10px solid #26874A;
+                    background-color: #F5FCF8;
+                  }
+
+                  .mb-error {
+                    border: 1px solid #BA4641;
+                    border-left: 10px solid #BA4641;
+                    background-color: #FCF5F5;
+                    border-radius: 8px;
+                  }
+
+                  .mb-info {
+                    border: 1px solid #327BC1;
+                    border-left: 10px solid #327BC1;
+                    background-color: rgb(24, 131, 181);
+                  }
+
+                  .mb-warning {
+                    border: 1px solid #F3AB4B;
+                    border-left: 10px solid #F3AB4B;
+                    background-color: rgb(181, 131, 24);
+                  }
+
+                  .check_icon {
+                    font-size: 20px !important;
+                    color: #26874A !important;
+                    margin-top: 5px !important;
+                  }
+
+                  .icon_message {
+                    padding: 4px 13px;
+                    margin-top: 0;
+                  }
+
+                  .cancel_icon {
+                    color: #E74C3C;
+                  }
+                </style>
+              </div>
+              <div class="card login">
+                <style>
+                  .cuadro-mensaje {
+                    width: 100%;
+                    padding: 10px;
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                    text-align: left;
+                    font-size: 12px;
+                    border-radius: 8px;
+                    color: #ffffff;
+                  }
+
+                  .mb-success {
+                    border: 1px solid #26874A;
+                    border-left: 10px solid #26874A;
+                    background-color: #F5FCF8;
+                  }
+
+                  .mb-error {
+                    border: 1px solid #BA4641;
+                    border-left: 10px solid #BA4641;
+                    background-color: #FCF5F5;
+                    border-radius: 8px;
+                  }
+
+                  .mb-info {
+                    border: 1px solid #327BC1;
+                    border-left: 10px solid #327BC1;
+                    background-color: rgb(24, 131, 181);
+                  }
+
+                  .mb-warning {
+                    border: 1px solid #F3AB4B;
+                    border-left: 10px solid #F3AB4B;
+                    background-color: rgb(181, 131, 24);
+                  }
+
+                  .check_icon {
+                    font-size: 20px !important;
+                    color: #26874A !important;
+                    margin-top: 5px !important;
+                  }
+
+                  .icon_message {
+                    padding: 4px 13px;
+                    margin-top: 0;
+                  }
+
+                  .cancel_icon {
+                    color: #E74C3C;
+                  }
+                </style>
+                <!-- Titulo -->
+                <div style="padding: 2rem 0;">
+                  <div class="card-content">
+                    <h1 class="titulo">Ingresá a tu cuenta de la Ciudad</h1>
+                  </div>
+                </div>
+                <div id="div-error" style="display: none; text-align:center;">
+                  <div id="error" class="alert-error mb-error-login"></div>
+                </div>
+                <form class="form-login" id="kc-form-login" action="login.html" method="post">
+                  <span>
+                    <a hidden="" id="loginUrl" href="login.html"></a>
+                  </span>
+                  <!-- Botones Ingreso -->
+                  <a href="login.html">
+                  <div class="card-content text-center">
+                    <button type="button" id="zocial-mail" class="btn btn-primary btn_icon social email btn-primary_text">
+                      <span class="social-icon"></span>
+                      <div class="social-text-container">
+                        <p class="btn-primary_text_social">Ingresar con CUIL / email</p>
+                      </div>
+                    </button>
+                  </div>
+                  </a>
+                  <div>
+                    <a href="login.html">
+                    <div class="card-content">
+                      <button type="button" ondblclick="return false;" onclick="" id="zocial-agip" class="btn social agip">
+                        <span class="social-icon"></span>
+                        <div class="social-text-container">
+                          <p class="btn-primary_text_social">Ingresar con AGIP</p>
+                        </div>
+                      </button>
+                    </div>
+                    </a>
+                  </div>
+                  <span>
+                    <a hidden="" id="urlForgotPassword" tabindex="5" href="">¿Olvidaste tu contraseña?</a>
+                  </span>
+                </form>
+                <style>
+                  .cuadro-mensaje {
+                    width: 100%;
+                    padding: 10px;
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                    text-align: left;
+                    font-size: 12px;
+                    border-radius: 8px;
+                    color: #ffffff;
+                  }
+
+                  .mb-success {
+                    border: 1px solid #26874A;
+                    border-left: 10px solid #26874A;
+                    background-color: #F5FCF8;
+                  }
+
+                  .mb-error {
+                    border: 1px solid #BA4641;
+                    border-left: 10px solid #BA4641;
+                    background-color: #FCF5F5;
+                    border-radius: 8px;
+                  }
+
+                  .mb-info {
+                    border: 1px solid #327BC1;
+                    border-left: 10px solid #327BC1;
+                    background-color: rgb(24, 131, 181);
+                  }
+
+                  .mb-warning {
+                    border: 1px solid #F3AB4B;
+                    border-left: 10px solid #F3AB4B;
+                    background-color: rgb(181, 131, 24);
+                  }
+
+                  .check_icon {
+                    font-size: 20px !important;
+                    color: #26874A !important;
+                    margin-top: 5px !important;
+                  }
+
+                  .icon_message {
+                    padding: 4px 13px;
+                    margin-top: 0;
+                  }
+
+                  .cancel_icon {
+                    color: #E74C3C;
+                  }
+                </style>
+                <div class="card-content text-center">
+                  <p class="txt_olvidaste" style="padding-bottom:0; text-decoration: underline;">
+                    <a href="" onclick="" class="pointer">¿Tenés problemas con tu mail?</a>
+                  </p>
+                  <p class="txt_olvidaste" style="padding-top:0; text-decoration: underline;">
+                    <a id="urlForgotPassword" class="pointer" href="">¿Olvidaste tu contraseña?</a>
+                  </p>
+                  <hr style="margin-top: 0;margin-bottom: 0;width: 90%;">
+                  <div class="card-content text-center">
+                    <p class="txt_crear_cuenta form-control_text">¿No tenés una cuenta? <a href="">Creá una nueva.</a>
+                    </p>
+                  </div>
+                </div>
+                <!-- IMAGEN OBELISCO -->
+                <style>
+                  .cuadro-mensaje {
+                    width: 100%;
+                    padding: 10px;
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                    text-align: left;
+                    font-size: 12px;
+                    border-radius: 8px;
+                    color: #ffffff;
+                  }
+
+                  .mb-success {
+                    border: 1px solid #26874A;
+                    border-left: 10px solid #26874A;
+                    background-color: #F5FCF8;
+                  }
+
+                  .mb-error {
+                    border: 1px solid #BA4641;
+                    border-left: 10px solid #BA4641;
+                    background-color: #FCF5F5;
+                    border-radius: 8px;
+                  }
+
+                  .mb-info {
+                    border: 1px solid #327BC1;
+                    border-left: 10px solid #327BC1;
+                    background-color: rgb(24, 131, 181);
+                  }
+
+                  .mb-warning {
+                    border: 1px solid #F3AB4B;
+                    border-left: 10px solid #F3AB4B;
+                    background-color: rgb(181, 131, 24);
+                  }
+
+                  .check_icon {
+                    font-size: 20px !important;
+                    color: #26874A !important;
+                    margin-top: 5px !important;
+                  }
+
+                  .icon_message {
+                    padding: 4px 13px;
+                    margin-top: 0;
+                  }
+
+                  .cancel_icon {
+                    color: #E74C3C;
+                  }
+                </style>
+              </div>
+              <div class="terms-links"> Ver <a href="https://login.buenosaires.gob.ar/auth/realms/miba/protocol/openid-connect/auth?response_type=code&amp;scope=openid+profile+email+login1+validation+contact&amp;&amp;client_id=portal-buenos-aires&amp;redirect_uri=https://buenosaires.gob.ar/inicio/#" data-toggle="modal" data-target="#div-term-cond" class="enlace pointer">Términos y condiciones</a> y <a href="https://login.buenosaires.gob.ar/auth/realms/miba/protocol/openid-connect/auth?response_type=code&amp;scope=openid+profile+email+login1+validation+contact&amp;&amp;client_id=portal-buenos-aires&amp;redirect_uri=https://buenosaires.gob.ar/inicio/#" data-toggle="modal" data-target="#div-pol-priv" class="enlace pointer">Políticas de privacidad</a>
+              </div>
+              <style>
+                .cuadro-mensaje {
+                  width: 100%;
+                  padding: 10px;
+                  margin-left: 0;
+                  margin-bottom: 15px;
+                  text-align: left;
+                  font-size: 12px;
+                  border-radius: 8px;
+                  color: #ffffff;
+                }
+
+                .mb-success {
+                  border: 1px solid #26874A;
+                  border-left: 10px solid #26874A;
+                  background-color: #F5FCF8;
+                }
+
+                .mb-error {
+                  border: 1px solid #BA4641;
+                  border-left: 10px solid #BA4641;
+                  background-color: #FCF5F5;
+                  border-radius: 8px;
+                }
+
+                .mb-info {
+                  border: 1px solid #327BC1;
+                  border-left: 10px solid #327BC1;
+                  background-color: rgb(24, 131, 181);
+                }
+
+                .mb-warning {
+                  border: 1px solid #F3AB4B;
+                  border-left: 10px solid #F3AB4B;
+                  background-color: rgb(181, 131, 24);
+                }
+
+                .check_icon {
+                  font-size: 20px !important;
+                  color: #26874A !important;
+                  margin-top: 5px !important;
+                }
+
+                .icon_message {
+                  padding: 4px 13px;
+                  margin-top: 0;
+                }
+
+                .cancel_icon {
+                  color: #E74C3C;
+                }
+              </style>
+            </div>
+            <!-- MODAL DE TERMINOS Y CONDICIONES -->
+            <div id="div-term-cond" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content bradius_tyc">
+                  <div class="modal-body">
+                    <div class="panel-heading no_padding">
+                      <h3 class="titulo-modal">Términos y condiciones</h3>
+                      <hr style="margin: 16px 0px;width: 100%;">
+                    </div>
+                    <div class="cuerpo__modal div_alto_fijo_login">
+                      <p>Los presentes términos y condiciones de uso e información legal (en adelante, Términos y Condiciones) aplican para la plataforma miBA (en adelante, miBA).</p>
+                    </div>
+                    <div class="modal-content-button" style="margin:0;">
+                      <button id="cerrar" class="btn btn_alto btn-primary btn-primary_text full-width" data-dismiss="modal" aria-label="Close"> Cerrar </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- MODAL DE POLITICA DE PRIVACIDAD -->
+            <div id="div-pol-priv" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content bradius_tyc">
+                  <div class="modal-body">
+                    <div class="panel-heading no_padding">
+                      <h3 class="titulo-modal">Políticas de privacidad</h3>
+                      <hr style="margin: 16px 0px;width: 100%;">
+                    </div>
+                    <div class="cuerpo__modal div_alto_fijo_login">
+                      <p>Las presentes Políticas de Privacidad, aplican a los productos de la plataforma miBA (en adelante, miBA), y rigen en conjunto con sus respectivos Términos y Condiciones de Uso, los cuales se aceptan antes de completar el formulario de registro como persona usuaria, y/o acceder y/o usar cualquier servicio vinculado al mismo. Si no se aceptan en su totalidad, la persona usuaria no deberá continuar con el registro, acceso y/o uso de miBA porque al hacerlo se entenderá que han leído y aceptado todas y cada una de las Políticas de Privacidad descritas.</p>
+                      <p>Estas Políticas de Privacidad, y aquellas que surjan de las eventuales modificaciones y adaptaciones que se realicen en miBA, serán aplicables y se considerarán aceptadas por quien utilice la misma. La violación o incumplimiento a cualquiera de las estipulaciones contenidas en estas Políticas y/o de la <a href="http://www2.cedom.gob.ar/es/legislacion/normas/leyes/ley1845.html" rel="nofollow">Ley de Protección de Datos Personales de la Ciudad Autónoma de Buenos Aires N° 1845</a> (texto consolidado según Ley N° 6.347), complementada por la <a href="http://www2.cedom.gob.ar/es/legislacion/normas/leyes/ley4496.html#:~:text=%2D%20La%20presente%20Ley%2C%20complementaria%20de,la%20jurisdicci%C3%B3n%20de%20la%20Ciudad%20." rel="nofollow">Ley N° 4.496</a> y de la <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/texact.htm" rel="nofollow">Ley Nacional de Protección de Datos Personales N° 25.326</a>, y su <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/70000-74999/70368/norma.htm" rel="nofollow">Decreto Reglamentario N° 1558/2001</a>, además de las reglamentaciones que las respectivas autoridades de aplicación dispongan, dará derecho al Gobierno de la Ciudad Autónoma de Buenos Aires (en adelante, GCABA) a suspender y/o eliminar el registro de la persona usuaria y/o impedirle que pueda continuar accediendo y/o utilizando el mismo. </p>
+                     
+                    </div>
+                    <div class="modal-content-button" style="margin:0;">
+                      <button id="cerrar" class="btn btn_alto btn-primary btn-primary_text full-width" data-dismiss="modal" aria-label="Close"> Cerrar </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- IMAGEN -->
+          <div class="hidden-xs hidden-sm col-md-7 miba_image">
+            <div class="imagen"></div>
+          </div>
+          <style>
+            .cuadro-mensaje {
+              width: 100%;
+              padding: 10px;
+              margin-left: 0;
+              margin-bottom: 15px;
+              text-align: left;
+              font-size: 12px;
+              border-radius: 8px;
+              color: #ffffff;
+            }
+
+            .mb-success {
+              border: 1px solid #26874A;
+              border-left: 10px solid #26874A;
+              background-color: #F5FCF8;
+            }
+
+            .mb-error {
+              border: 1px solid #BA4641;
+              border-left: 10px solid #BA4641;
+              background-color: #FCF5F5;
+              border-radius: 8px;
+            }
+
+            .mb-info {
+              border: 1px solid #327BC1;
+              border-left: 10px solid #327BC1;
+              background-color: rgb(24, 131, 181);
+            }
+
+            .mb-warning {
+              border: 1px solid #F3AB4B;
+              border-left: 10px solid #F3AB4B;
+              background-color: rgb(181, 131, 24);
+            }
+
+            .check_icon {
+              font-size: 20px !important;
+              color: #26874A !important;
+              margin-top: 5px !important;
+            }
+
+            .icon_message {
+              padding: 4px 13px;
+              margin-top: 0;
+            }
+
+            .cancel_icon {
+              color: #E74C3C;
+            }
+          </style>
+        </div>
+      </div>
+      <!-- PIE DE PAGINA -->
+      <footer>
+        <div class="container">
+          <section class="secContenedor__pie--contacto">
+            <h4 class="titulo-items">Teléfonos útiles</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item phone-items">
+                <a href="tel:102">102 - Niñez y Adolescencia</a>
+              </li>
+              <li class="list-inline-item phone-items">
+                <a href="tel:103">103 - Emergencias</a>
+              </li>
+              <li class="list-inline-item phone-items">
+                <a href="tel:107">107 - SAME</a>
+              </li>
+              <li class="list-inline-item phone-items">
+                <a href="tel:911">911 - Policía</a>
+              </li>
+              <li class="list-inline-item phone-items">
+                <a href="tel:144">144 - Violencia de género</a>
+              </li>
+              <li class="list-inline-item phone-items">
+                <a href="tel:147">147 - Atención ciudadana</a>
+              </li>
+            </ul>
+            <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">Ver todos los teléfonos</a>
+          </section>
+          <section>
+            <h4 class="titulo-items">Redes de la Ciudad</h4>
+            <ul class="list-inline">
+              <li class="list-inline-item redes-items">
+                <a href="https://www.facebook.com/GCBA">
+                  <img src="./recursos/facebook.svg" class="img-redes-items" alt="Logo Facebook">Facebook </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a href="https://www.instagram.com/buenosaires">
+                  <img src="./recursos/instagram.svg" class="img-redes-items" alt="Logo Instagram">Instagram </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a href="https://twitter.com/gcba">
+                  <img src="./recursos/twitter.svg" class="img-redes-items" alt="Logo Twitter">Twitter </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a href="https://www.youtube.com/user/GCBA">
+                  <img src="./recursos/youtube.svg" class="img-redes-items" alt="Logo YouTube">YouTube </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
+                  <img src="./recursos/linkedin.svg" class="img-redes-items" alt="Logo LinkedIn">LinkedIn </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <hr class="divider">
+        <div class="container">
+          <section class="secContenedor__pie--legal">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-5 col-xl-4 mb-4 mb-md-0 secContenedor__pie--img">
+                <img class="img-legal-1" src="./recursos/ciudad-ba-sm.png" alt="Ciudad de Buenos Aires" height="40">
+                <img class="img-legal-2" src="./recursos/ciudad-ba.png" alt="Ciudad de Buenos Aires" height="40">
+                <img class="img-vamos-ba" src="./recursos/vamos-ba.png" alt="Vamos Buenos Aires">
+              </div>
+              <!--<div class="col-12 col-md-7 col-xl-8"><ul class="list-inline"><li class="list-inline-item"><a href="https://boletinoficial.buenosaires.gob.ar">Boletín oficial</a></li><li class="list-inline-item"><a href="https://www.buenosaires.gob.ar/innovacion/ciudadinteligente/terminos-y-condiciones">Términos y condiciones</a></li><li class="list-inline-item"><a href="https://www.buenosaires.gob.ar/privacidad">Política de privacidad</a></li><li class="list-inline-item"><a href="https://www.buenosaires.gob.ar/oficiosjudiciales">Oficios judiciales</a></li></ul></div>-->
+            </div>
+          </section>
+          <section>
+            <div class="secContenedor_pie--licencia">Los contenidos de buenosaires.gob.ar están licenciados bajo <br class="secContenedor_pie--licencia2">Creative Commons Reconocimiento 2.5 Argentina License. </div>
+          </section>
+        </div>
+      </footer>
+      <!--<div class="footer row"><p class="title col-xs-12">Telefonos Útiles</p><section class="telefonos-utiles col-xs-12"><a href="tel:102" class="item">102 - Niñez y Adolescencia</a><a href="tel:103" class="item">103 - Emergencias</a><a href="tel:107" class="item">107 - SAME</a><a href="tel:911" class="item">911 - Policía</a><a href="tel:147" class="item">147 - Atención ciudadana</a><a href="tel:144" class="item">144 - Violencia de género</a><p class="ver-mas"><a href="#">Ver todos los teléfonos</a></p></section><p class="title col-xs-12">Redes Sociales</p><section class="redes-sociales col-xs-12"><a target="_blank" href="https://facebook.com" class="item social"><span class="icon facebook"></span>Facebook</a><a target="_blank" href="https://instagram.com" class="item social"><span class="icon instagram"></span>Instagram</a><a target="_blank" href="https://twitter.com" class="item social"><span class="icon twitter"></span>Twitter</a><a target="_blank" href="https://youtube.com" class="item social"><span class="icon youtube"></span>YouTube</a><a target="_blank" href="https://linkedin.com" class="item social"><span class="icon linkedin"></span>LinkedIn</a></section><section class="logos col-xs-12"><img class="item" src="/auth/resources/2.7.0-fix1/login/miba/images/baciudad_icon_footer.svg" alt="Buenos Aires ciudad"><img class="item" src="/auth/resources/2.7.0-fix1/login/miba/images/ba_icon_footer.svg" alt="Vamos Buenos Aires"></section><p class="col-xs-12">Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons</p></div></div></footer>-->
+    </div>
+    <script></script>
